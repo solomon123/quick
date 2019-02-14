@@ -1,0 +1,21 @@
+uuid: d6ab9e01-5eb4-4327-be54-4a5f5d610355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_name
+    - node.type.registration
+  module:
+    - text
+id: node.registration.field_last_name
+field_name: field_last_name
+entity_type: node
+bundle: registration
+label: 'Last Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,32 @@
+uuid: 56431bcf-ee84-48fd-90c6-82cb8c4223b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_pages
+  module:
+    - ctools
+    - views
+  theme:
+    - bartik
+id: views_block__related_pages_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:related_pages-block_1'
+settings:
+  id: 'views_block:related_pages-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

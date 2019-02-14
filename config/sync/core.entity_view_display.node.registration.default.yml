@@ -1,0 +1,44 @@
+uuid: c30f392c-b1fa-449b-8979-484e3ee39470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.registration.field_email
+    - field.field.node.registration.field_first_name
+    - field.field.node.registration.field_last_name
+    - node.type.registration
+  module:
+    - text
+    - user
+id: node.registration.default
+targetEntityType: node
+bundle: registration
+mode: default
+content:
+  field_email:
+    weight: 104
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_first_name:
+    weight: 102
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_last_name:
+    weight: 103
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }
