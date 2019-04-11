@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.body
     - field.storage.node.field_image
-    - image.style.medium
+    - image.style.thumbnail
     - node.type.article
     - node.type.page
   module:
@@ -135,8 +135,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: medium
-            image_link: ''
+            image_style: thumbnail
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -340,6 +340,28 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_image'
+  feed_1:
+    display_plugin: feed
+    id: feed_1
+    display_title: Feed
+    position: 2
+    display_options:
+      display_extenders:
+        metatag_display_extender: {  }
+      row:
+        type: node_rss
+        options: {  }
+      path: pm-office/feed
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:

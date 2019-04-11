@@ -1,0 +1,15 @@
+uuid: 71f23adb-8fba-4c09-93fa-396770225cd3
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: production
+description: 'this config can be implemented on prod'
+folder: ../config/prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
