@@ -1,0 +1,23 @@
+buttons_size: 48
+additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_twitter\"></a>\r\n<a class=\"a2a_button_google_plus\"></a>\r\n"
+additional_css: ".a2a_kit a:hover path {\r\n              fill: #8075ff;\r\n          }\r\n          /* Override default opacity on hover */\r\n          .a2a_kit a:active .a2a_svg,\r\n          .a2a_kit a:hover .a2a_svg,\r\n          .a2a_menu a:active .a2a_svg,\r\n          .a2a_menu a:hover .a2a_svg {\r\n              opacity: 1 !important;\r\n          } "
+additional_js: "a2a_config.templates.email = {\r\n               subject: \"${title}\",\r\n               body: \"${link}\"\r\n          };\r\n          a2a_config.icon_color = \"transparent,#5e6a71\"; "
+universal_button: none
+custom_universal_button: ''
+universal_button_placement: before
+no_3p: false
+entities:
+  media: 1
+  node: 1
+  comment: 0
+  aggregator_feed: 0
+  aggregator_item: 0
+  block_content: 1
+  contact_message: 0
+  file: 0
+  shortcut: 0
+  taxonomy_term: 0
+  user: 0
+  menu_link_content: 0
+_core:
+  default_config_hash: 9YPlBuinIKLe5jVEf-aIhZvKFn77i18yD4CrNR0BbVQ

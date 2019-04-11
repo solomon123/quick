@@ -1,0 +1,21 @@
+uuid: 898a7645-f822-4d0d-b0e3-8eefe7d0a715
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reporter
+    - node.type.news
+  module:
+    - text
+id: node.news.field_reporter
+field_name: field_reporter
+entity_type: node
+bundle: news
+label: Reporter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

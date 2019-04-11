@@ -1,0 +1,21 @@
+uuid: b9b8d323-2504-4607-80fd-986154b374b4
+langcode: en
+status: true
+dependencies: {  }
+id: development_config
+label: 'development config'
+description: 'this config only remains on dev'
+folder: ../config/dev
+module:
+  devel: 0
+  devel_generate: 0
+theme: {  }
+blacklist:
+  - devel.settings
+  - devel.toolbar.settings
+graylist:
+  - devel.settings
+  - devel.toolbar.settings
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
